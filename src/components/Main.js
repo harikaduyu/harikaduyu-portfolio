@@ -32,7 +32,7 @@ class Main extends React.Component {
             <img src={pic01} alt="" />
           </span>
           <p>
-           Hello, nice to seee you here! 
+           Hello, nice to see you here! 
            </p>
            <p>
            I am Harika and I currently live in Berlin. My goal is to never stop learning and build awesome things along the way. I like developing stuff and love exploring new technologies. I speak Turkish (native)  and English (fluent), and have a long lasting battle with learning German. :)
