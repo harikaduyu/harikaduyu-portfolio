@@ -1,20 +1,19 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import profile from '../images/profile.jpeg'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-diamond"></span>
+      {/* <i className="icon fas fa-cubes"></i> */}
+      <img style={{width:'100%', borderRadius:'50%'}} className="icon" src={profile} alt="" />
+
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <h1>Hello, my name is Harika</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
-          <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+        I'm a Software Engineer based in Berlin.
         </p>
       </div>
     </div>
@@ -23,10 +22,10 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('intro')
+              props.onOpenArticle('about')
             }}
           >
-            Intro
+            About
           </button>
         </li>
         <li>
@@ -41,10 +40,10 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('about')
+              props.onOpenArticle('projects')
             }}
           >
-            About
+            Projects
           </button>
         </li>
         <li>
