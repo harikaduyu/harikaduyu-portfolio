@@ -39,6 +39,12 @@ const Header = props => (
         </li>
         <li>
           <button
+          >
+            <a href="https://harikaduyu.fra1.digitaloceanspaces.com/resume/Harika_Duyu_Resume.pdf">Resume</a>
+          </button>
+        </li>
+        <li>
+          <button
             onClick={() => {
               props.onOpenArticle('projects')
             }}

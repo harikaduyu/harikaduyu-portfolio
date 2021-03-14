@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pic01.jpg'
-
+import exercise_tracker from '../images/exercise_tracker.png'
 
 class Main extends React.Component {
   render() {
@@ -52,64 +52,49 @@ class Main extends React.Component {
         >
           <h2 className="major">Work</h2>
           <h3><a href="https://www.rebuy.de/">reBuy</a> - Software Developer (Pricing)</h3>
-           <p> Oct,2019 - Present <br/> Berlin, Germany</p>
-          <span className="image main">
-        
-            {/* <img src={pic02} alt="" /> */}
-          </span>
-          <p>
-           As of October 2019, I am working as a Software Developer in the Pricing department. My team is working very closely with Category Managers, Country Managers and other stakeholders related to pricing.
-          </p>
-          <p>
-            I am very happy to be part of a team where I can use my skills to develop tools that are used by many and solving problems related to those tools and their technologies.
-          </p>
-          <p>
-            We have essentially two main services for pricing. The biggest one is the reBuy Pricing Engine, which is a complex system consist of many parts, including a Web UI for users to interact, a backend  (using technologies like SQL Server, C# ASP.NET, SSAS, Azure) where all the pricing calculationand communicating to other services for publishing prices happens. Currently working on a project for automating pricing for special cases and help ease the category managers daily work by decreasing the number of manual adjustments for those.
-          </p>
-          <p>
-            The second one is the reBuy Price Benchmarking tool. This is a competitor price crawler, whit a seperate Web UI where users can set priorities for competitors and/or products and set time intervals for crawling times for them. This tool is built using PHP, MySQL and AWS. Aside from maintiaining it, I worked on increasing the price coverage by creating link collectors and custom link matchers and increased the coverage from 56% to 90%.
-          </p>
+           <p> Oct, 2019 - Present <br/> Berlin, Germany</p>
+            <ul>
+              <li>
+              Maintaining and improving the web crawling tool, to crawl competitor prices
+              </li>
+              <li>
+              Maintaining and improving Pricing Engine
+              </li>
+              <li>
+              Automatize manual tasks to ease work of category managers
+              </li>
+              <li>
+              Writing DAGs in airflow to schedule some tasks
+              </li>
+              <li>
+              Create dashboards and reports in Power BI
+              </li>
+            </ul>
+          
+            
+            <p>Technologies: PHP, MySQL, AWS //  C#, ASP.Net, .Net, Entity Framework, MS SQL Server, SQL Server Analysis Services, Azure</p> 
+
           <h3><a href="https://www.moebel24.de/">X24 Factory</a> - Data Science and Engineer (Working Student)</h3>
-           <p> Nov,2018 - Sep,2019 <br/>Berlin, Germany</p>
-          <span className="image main">
-        
-            {/* <img src={pic02} alt="" /> */}
-          </span>
-          <p>
-            While studying for my masters in Berlin, I got the opportunity to work at X24 Faxtory, or rather <a href="https://www.moebel24.de/">moebel24.de</a>. At the beginning, the idea was for me to work on data science related tasks, as I was also planning to write my thesis on a similar topic. But the team I was working with, worked very closed to backend engineers (in fact we even had our daily standup meetings together with backend engineers) and they were also tackling all the data engineering stuff.
-          </p>
-          <p>
-            The more I worked there, the more I got fascinated with the engineering part of it and all the tools and technologies they were using. I found myself, studying how docker containers work, or other technologies like Spark, Kubernetes and many more.
-          </p>
-          <p>
-            I collected and processed data either through internal data sources or external like scraping or Amazon Mechanical Turk. I evaluated the utility of data and worked on modelling neural nets for extracting metadata of products from images which is useful for the search engine (Elasticsearch). I also developed a Proof of Concept for Kubeflow for our projects.  I also participated other small tasks, which helped me improve my programming skills.
-          </p>
+           <p> Nov, 2018 - Sep, 2019 <br/>Berlin, Germany</p>
+           <ul>
+              <li>
+              Evaluating the utility of data and modelling neural nets for extracting relevant metadata useful for the search engine
+              </li>
+              <li>
+              Developed a POC for Kubeflow
+              </li>
+              <li>
+              Collecting data (internal or scraping)
+              </li>
+            </ul>
+            <p>Technologies: Python (Pandas, TensorFlow, sklearn),  MySQL, Cassandra, Kubernetes, Docker</p> 
           <h3><a href="https://www.microsoft.com/tr-tr">Microsoft</a> - Business Associate Intern</h3>
-           <p> Feb,2016 - Nov,2016 <br/>Istanbul, Turkey</p>
-          <span className="image main">
-        
-            {/* <img src={pic02} alt="" /> */}
-          </span>
-          <p>
-            After my first experience, I knew I wanted to experience what it feels like to work for a company who builds great technologies and reaches to billions of people around the world.
-          </p>
-          <p>
-            Microsoft office in Turkey only operates in Sales and Marketing departments, and I was working with a team who kind of did both for small and medium businesses through its partners. I was the person in the middle of all the stakeholders (like partners, account managers, people from other departments). 
-          </p>
-          <p>I am tremendously grateful for this experience, as I got a chance to see how a company as big as Microsoft operates. However, I realized being part of a company building these technologies wasn't what I actually wanted. I wanted to be the person to create them.</p>
+           <p> Feb, 2016 - Nov, 2016 <br/>Istanbul, Turkey</p>
+         
           <h3><a href="https://www.trendyol.com/">Trendyol</a> - Digital Marketing Intern</h3>
-           <p> Jun,2015 - Oct,2015 <br/>Istanbul, Turkey</p>
-          <span className="image main">
-        
-            {/* <img src={trendyol} alt="" /> */}
-          </span>
-          <p>
-          Trendyol is a rapidly growing e-commerce website for clothing in Turkey. They even started to oparate in <a href="https://www.trendyol.com/">Germany.</a>
-          </p>
-          <p>
-          This was my first professional experience and I got very lucky to work with an great team. I get to work with amazing technologies around digital advertising platforms, like Google Ads, Google Analytics and Adphorus. This had sparked something in me and I started to wish to be part of those technologies.
-          </p>
+           <p> Jun, 2015 - Oct, 2015 <br/>Istanbul, Turkey</p>
           {close}
+
         </article>
 
         <article
@@ -120,12 +105,14 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Projects</h2>
+
+          <h3><a href="https://harikaduyu-exercise-tracker.herokuapp.com/">Exercise Tracker</a></h3>
           <span className="image main">
+            <img src={exercise_tracker} alt="" />
           </span>
-          <p>
-            Coming soon...
-          </p>
+          <p>A web application for users to track their exercise routines. Created using django framework, deployed to heroku. It's connected to a PostgreSQL server hosted on DigitalOcean.</p>
           {close}
+          <p><a href="https://harikaduyu-exercise-tracker.herokuapp.com/">Demo</a> <a href="https://github.com/harikaduyu/exercise_tracker">Code</a></p>
         </article>
 
         <article
