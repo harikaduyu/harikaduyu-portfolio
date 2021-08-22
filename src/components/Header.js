@@ -6,15 +6,17 @@ const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
       {/* <i className="icon fas fa-cubes"></i> */}
-      <img style={{width:'100%', borderRadius:'50%'}} className="icon" src={profile} alt="" />
-
+      <img
+        style={{ width: '100%', borderRadius: '50%' }}
+        className="icon"
+        src={profile}
+        alt=""
+      />
     </div>
     <div className="content">
       <div className="inner">
         <h1>Hello, my name is Harika</h1>
-        <p>
-        I'm a Software Engineer based in Berlin.
-        </p>
+        <p>I'm a Software Engineer based in Berlin.</p>
       </div>
     </div>
     <nav>
@@ -38,9 +40,10 @@ const Header = props => (
           </button>
         </li>
         <li>
-          <button
-          >
-            <a href="https://harikaduyu.fra1.digitaloceanspaces.com/resume/Harika_Duyu_Resume.pdf">Resume</a>
+          <button>
+            <a href="https://harikaduyu.fra1.digitaloceanspaces.com/resume/Harika_Duyu_Resume_08_21.pdf">
+              Resume
+            </a>
           </button>
         </li>
         <li>
