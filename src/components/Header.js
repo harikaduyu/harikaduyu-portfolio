@@ -41,7 +41,7 @@ const Header = props => (
         </li>
         <li>
           <button>
-            <a href="https://harikaduyu.fra1.digitaloceanspaces.com/resume/Harika_Duyu_Resume_08_21.pdf">
+            <a href="https://harikaduyu.fra1.digitaloceanspaces.com/resume/Harika_Duyu_Resume.pdf">
               Resume
             </a>
           </button>
