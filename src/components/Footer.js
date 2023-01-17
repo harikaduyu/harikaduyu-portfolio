@@ -22,11 +22,6 @@ const Footer = (props) => (
                 <span className="label">GitHub</span>
               </a>
             </li>
-            <li>
-              <a href="https://www.xing.com/profile/Harika_Duyu/" className="icon fa-xing-square">
-                <span className="label">Xing</span>
-              </a>
-            </li>
             {/* <li>
               <a href="https://codebushi.com" className="icon fa-instagram">
                 <span className="label">Instagram</span>
